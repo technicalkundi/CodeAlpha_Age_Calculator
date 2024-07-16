@@ -12,17 +12,6 @@ An Age Calculator web application to calculate your age in years, months, and da
 
 You can view a live demo of the project [here](https://codesandbox.io/p/sandbox/github/technicalkundi/CodeAlpha_Age_Calculator/tree/main/?file=%2Findex.html).
 
-## Installation
-
-1. Clone the repository to your local machine:
-    ```bash
-    git clone https://github.com/technicalkundi/CodeAlpha_Age_Calculator.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd age-calculator
-    ```
-
 ## Usage
 
 1. Open the `index.html` file in your web browser.
