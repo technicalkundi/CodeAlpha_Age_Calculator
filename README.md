@@ -10,7 +10,7 @@ An Age Calculator web application to calculate your age in years, months, and da
 
 ## Demo
 
-You can view a live demo of the project [here][https://codesandbox.io/p/sandbox/github/technicalkundi/CodeAlpha_Age_Calculator/tree/main/?file=%2Findex.html]
+You can view a live demo of the project [here](https://codesandbox.io/p/sandbox/github/technicalkundi/CodeAlpha_Age_Calculator/tree/main/?file=%2Findex.html).
 
 ## Installation
 
