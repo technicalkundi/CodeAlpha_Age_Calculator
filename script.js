@@ -8,16 +8,15 @@ const result = document.getElementById('ageResult');
 const birthMonthInput = document.getElementById('birthMonth');
 const monthNameDisplay = document.getElementById('monthNameDisplay');
 
-// Event listener for the birthMonth input to update month name dynamically
 birthMonthInput.addEventListener('input', function() {
     const birthMonth = parseInt(birthMonthInput.value);
 
     if (birthMonth >= 1 && birthMonth <= 12) {
         const birthMonthName = monthNames[birthMonth - 1];
-        // Display the month name dynamically next to the input
+
         monthNameDisplay.textContent = birthMonthName;
     } else {
-        // Clear the month name display if the input is invalid
+        
         monthNameDisplay.textContent = '';
     }
 });
@@ -41,7 +40,12 @@ form.addEventListener('submit', function(event) {
     let ageMonths = today.getMonth() - birthDateObj.getMonth();
     let ageDays = today.getDate() - birthDateObj.getDate();
 
-    if (ageMonths < 0 || (ageMonths === 0 && ageDays < 0)) {
+    if (ageDays < 0) {
+        ageMonths--;
+        ageDays += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+    }
+
+    if (ageMonths < 0) {
         ageYears--;
         ageMonths += 12;
     }
